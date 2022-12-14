@@ -1,5 +1,5 @@
 import streamlit as st
-from app_home import run_home_app
+from app_Home import run_home_app
 from app_eda import run_eda_app
 from app_ml import run_ml_app
 
