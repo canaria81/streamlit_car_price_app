@@ -4,6 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sb
 
+# 이코드는 ec2에 한글 폰트가 설치되어 있어야 하고,팡썬에서 한글 사용가능 하도록 먼저 셋팅해야 한다
+
+import platform
+from matplotlib import font_manager, rc
+plt.rcParams['axes.unicode_minus'] = False
+if platform.system() == 'Linux':
+    rc('font', family='NanumGothic')
 
 def run_eda_app() :
 
